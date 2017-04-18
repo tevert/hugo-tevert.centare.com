@@ -1,0 +1,8 @@
+{
+   "baseURL": "http://example.org/",
+   "languageCode": "en-us",
+   "title": "My New Hugo Site",
+   "contentdir": "content",
+   "layoutdir": "layouts",
+   "publishdir": "public"
+}

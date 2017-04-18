@@ -1,0 +1,79 @@
+/*!
+ * Start Bootstrap - Small Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    background: #555555;
+}
+
+.content {
+    background: #BBBBBB;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 5em;
+}
+h1,h2,h3,h4,h5 {
+    color: #CC4025;
+}
+
+.panel {
+    background-color: #888888;
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+.attribution {
+    font-style: 'italic';
+    font-size: 0.8em;
+    color: #333333;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+@media(max-width:768px) {
+    #main-logo-img {
+        height: 64px;
+    }
+
+    .nav.navbar-nav li {
+        text-align: right;
+    }
+}
+
+@media(min-width:768px) {
+    body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
