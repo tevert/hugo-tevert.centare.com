@@ -1,8 +1,7 @@
 {
-   "baseURL": "http://example.org/",
-   "languageCode": "en-us",
-   "title": "My New Hugo Site",
-   "contentdir": "content",
-   "layoutdir": "layouts",
-   "publishdir": "public"
+    "baseURL": "https://www.thefoxgang.com/",
+    "languageCode": "en-us",
+    "title": "The Foxgang",
+    "publishdir": "live",
+    "theme": "thefoxgang"
 }
