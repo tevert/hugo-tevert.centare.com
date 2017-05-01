@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+<div class="content container">
+    {{ range where .Data.Pages "Title" "Blog" }}
+        <div class="markdown">
+            {{ .Content }}
+        </div>
+    {{ end }}
+    {{- range first 10 (where .Data.Pages "Title" "!=" "Blog") }}
+        <div class="panel">
+            <div class="panel-body">
+                <div class="col-md-9">
+                    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                    <p>{{ .Summary }}</p>
+                </div>
+                <div class="col-md-3">
+                    <img class="img-responsive img-rounded" src="{{ .Param "image" }}"/>
+                </div>
+            </div>
+        </div>
+    {{- end }}
+</div>
+{{ partial "footer.html" . }}
