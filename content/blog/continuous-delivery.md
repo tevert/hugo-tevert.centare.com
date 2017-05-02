@@ -33,6 +33,7 @@ Finally, Continuous Delivery (CD) exposes the ability to be more deliberate in h
 
 ### The Real World
 So what does CD look like in practice? Here’s a quick diagram showing an example of how CD is normally done at my current employer, Centare:
+
 ![Centare CD Diagram](/img/blog/continuous-delivery/centare_cd_pipe.png)
 
 And here’s how I do it with my Moodboard project:

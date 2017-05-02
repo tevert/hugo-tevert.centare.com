@@ -20,25 +20,27 @@ title = "Home"
     <!-- /.col-md-4 -->
 </div>
 <div class="row">
-    <h3>Current Projects: </h3>
-    <div class="panel">
-        <div class="panel-heading">
-            <h3>Mood</h3><hr/>
-        </div>
-        <div class="panel-body">
-            <div class="col-md-2 btn-group-vertical" role="group">
-                <a class="btn btn-default" href="http://moodboard.azurewebsites.net/" target="_blank">
-                    <span class="glyphicon glyphicon-globe"></span> Live Site
-                </a>
-                <a class="btn btn-default" href="https://github.com/tevert/Mood" target="_blank">
-                    <img src="/img/GitHub-Mark-64px.png" alt="" height="16"> Repo
-                </a>
+    <div class="col-md-12">
+        <h3>Current Projects: </h3>
+        <div class="panel">
+            <div class="panel-heading">
+                <h3>Mood</h3><hr/>
             </div>
-            <div class="col-md-4">
-                <p>Getting reliable feedback is notoriously difficult. This simple moodboard is designed to make the act of submitting feedback as effortless as possible, making itself appealing by its simplicity. For best results, put it on tablets in fullscreen mode and scatter them throughout the area! The site is a .NET MVC webapp hosted in Azure. The live site provided is an excellent sandbox to try out, but is hosted on Azure's potato-tier of service.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive img-rounded" src="/img/mood.png" alt="A simple moodboard"/>
+            <div class="panel-body">
+                <div class="col-md-2 btn-group-vertical" role="group">
+                    <a class="btn btn-default" href="http://moodboard.azurewebsites.net/" target="_blank">
+                        <span class="glyphicon glyphicon-globe"></span> Live Site
+                    </a>
+                    <a class="btn btn-default" href="https://github.com/tevert/Mood" target="_blank">
+                        <img src="/img/GitHub-Mark-64px.png" alt="" height="16"> Repo
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <p>Getting reliable feedback is notoriously difficult. This simple moodboard is designed to make the act of submitting feedback as effortless as possible, making itself appealing by its simplicity. For best results, put it on tablets in fullscreen mode and scatter them throughout the area! The site is a .NET MVC webapp hosted in Azure. The live site provided is an excellent sandbox to try out, but is hosted on Azure's potato-tier of service.</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-rounded" src="/img/mood.png" alt="A simple moodboard"/>
+                </div>
             </div>
         </div>
     </div>
