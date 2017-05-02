@@ -1,7 +1,36 @@
 {{ partial "header.html" . }}
     <!-- Page Content -->
     <div class="content container">
-        {{ .Content }}
+        <div class="row">
+            <div class="col-md-5">
+                <img class="img-responsive img-rounded" src="{{.Param "image"}}">
+                {{ if isset .Params "image-caption" }}
+                    <span class="attribution">{{ .Param "image-caption" | safeHTML }}</span>
+                {{ end }}
+            </div>
+            <div class="col-md-7">
+                <h1>{{ .Title }}</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                {{ .Content }}
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="attribution">
+                        {{ if isset .Params "footer" }}
+                            {{ .Param "footer" | safeHTML }}
+                        {{ end }}
+                    </p>
+                </div>
+            </div>
+        </footer>
     </div>
     <!-- /.container -->
 {{ partial "footer.html" . }}

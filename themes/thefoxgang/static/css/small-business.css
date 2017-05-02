@@ -10,12 +10,16 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
-    background: #555555;
+    background: #884025;
 }
 
 .content {
     background: #BBBBBB;
-    padding: 25px;
+    padding: 0 25px 25px 25px;
+}
+
+.content .row {
+    margin-top: 25px;
 }
 
 h1 {
@@ -32,9 +36,12 @@ a {
 a:hover {
     color: black;
 }
+a.btn {
+    text-decoration: none;
+}
 
 .panel {
-    background-color: #888888;
+    background-color: #AFAFAF;
 }
 
 .navbar-fixed-top .nav {

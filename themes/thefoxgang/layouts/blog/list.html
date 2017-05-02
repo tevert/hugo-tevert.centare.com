@@ -5,18 +5,27 @@
             {{ .Content }}
         </div>
     {{ end }}
-    {{- range first 10 (where .Data.Pages "Title" "!=" "Blog") }}
-        <div class="panel">
-            <div class="panel-body">
-                <div class="col-md-9">
-                    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                    <p>{{ .Summary }}</p>
-                </div>
-                <div class="col-md-3">
-                    <img class="img-responsive img-rounded" src="{{ .Param "image" }}"/>
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-md-2">
+
         </div>
-    {{- end }}
+        <div class="col-md-10">
+            {{- range first 10 (where .Data.Pages "Title" "!=" "Blog") }}
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="col-md-9">
+                            <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                            <p>{{ .Summary }}</p>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="{{ .Permalink }}">
+                                <img class="img-responsive img-rounded" src="{{ .Param "image" }}"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {{- end }}
+        </div>
+    </div>
 </div>
 {{ partial "footer.html" . }}

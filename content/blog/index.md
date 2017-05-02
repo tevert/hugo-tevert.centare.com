@@ -4,5 +4,3 @@ draft = false
 title = "Blog"
 
 +++
-
-<h1>This is a blog list</h1>
