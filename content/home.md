@@ -32,7 +32,7 @@ title = "Home"
                         <span class="glyphicon glyphicon-globe"></span> Live Site
                     </a>
                     <a class="btn btn-default" href="https://github.com/tevert/Mood" target="_blank">
-                        <img src="/img/GitHub-Mark-64px.png" alt="" height="16"> Repo
+                        <img src="/img/GitHub-Mark-64px.png" alt="" style="width: 16px;"/> Repo
                     </a>
                 </div>
                 <div class="col-md-4">
