@@ -45,4 +45,28 @@ title = "Home"
         </div>
     </div>
 </div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>Recent Talks: </h3>
+        <div class="panel">
+            <div class="panel-heading">
+                <h3>Scaling Agile with DevOps</h3><hr/>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-2 btn-group-vertical" role="group">
+                    <a class="btn btn-default" href="/docs/Scaling Agile with DevOps.pdf" target="_blank">
+                        <span class="glyphicon glyphicon-save"></span> PDF
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <p>There's a lot of ambiguity in the industry about what DevOps really is, how it relates to Agile, and where and why it can be helpful. I gave this talk to a scaled agile meetup group in the Chicago area, to help clear some of that up.</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-rounded" src="/img/ScalingAgileWithDevOps.png" alt="Title slide - Scaling Agile with DevOps"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- /.row -->
