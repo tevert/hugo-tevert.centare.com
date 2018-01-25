@@ -46,7 +46,33 @@
         {{ range where .Data.Pages "Section" "newtab" }}
             <div class="container">
                 {{ .Content }}
+                <hr/>
+                <div class="row">
+                    <p><a type="button" class="btn btn-primary" role="button" id="background-image-source-link" target="_blank">Image source...</a></p>
+                </div>
             </div>
         {{ end }}
     </body>
+    <script>
+        $.ajax({ url: 'https://www.reddit.com/r/pics.json', success: function(data) {
+            var chosenPost;
+            let posts = data.data.children;
+            for (let i = 0; i < posts.length; i++) {
+                if (posts[i].data.domain == 'i.imgur.com' && !posts[i].data.over_18) {
+                    chosenPost = posts[i];
+                    break;
+                }
+            }
+
+            if (!chosenPost) {
+                return;
+            } else {
+                $('body').css('background-image', 'url("' + chosenPost.data.url + '")');
+                $('body').css('background-size', 'contain');
+                $('body').css('background-repeat', 'no-repeat');
+                $('body').css('background-position', 'center');
+                $('#background-image-source-link').attr('href', 'https://www.reddit.com' + chosenPost.data.permalink)
+            }
+        } })
+    </script>
 </html>
