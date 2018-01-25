@@ -1,3 +1,3 @@
 [submodule "live"]
 	path = live
-	url = https://github.com/tevert/tevert.github.io
+	url = https://github.com/tevert/tevert.github.io.git
