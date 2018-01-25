@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- Latest bootstrap, because I'm too lazy to implement simple columns on my own -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- Cryptowat.ch (https://github.com/cryptowatch/embed) -->
+        <script type="text/javascript" src="https://static.cryptowat.ch/assets/scripts/embed.bundle.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+
+        <style>
+            body {
+                background-color: #333333;
+            }
+            a.list-group-item {
+                background-color: #111111;
+                color: #AAAAAA;
+            }
+            a.list-group-item:hover, a.list-group-item:focus {
+                background-color: #000000;
+                color: #FFFFFF;
+            }
+            .form-control {
+                background-color: #111111;
+                color: #AAAAAA;
+            }
+            img.favicon {
+                height: 16px;
+            }
+            .img-responsive {
+                margin: 0 auto;
+            }
+            .container {
+                margin-top: 50px;
+            }
+            #clock {
+                margin: 0 auto;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        {{ range where .Data.Pages "Section" "newtab" }}
+            <div class="container">
+                {{ .Content }}
+            </div>
+        {{ end }}
+    </body>
+</html>
