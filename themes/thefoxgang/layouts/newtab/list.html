@@ -58,7 +58,7 @@
             var chosenPost;
             let posts = data.data.children;
             for (let i = 0; i < posts.length; i++) {
-                if ((posts[i].data.domain == 'i.imgur.com' || posts[i].data.domain == 'i.reddit.com') && 
+                if ((posts[i].data.domain == 'i.imgur.com' || posts[i].data.domain == 'i.redd.it') && 
                         !posts[i].data.over_18) {
                     chosenPost = posts[i];
                     break;
