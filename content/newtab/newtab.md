@@ -91,6 +91,9 @@ title = "Newtab"
             <a type="button" href="https://runzheimer.visualstudio.com" class="list-group-item">
                 <img class="favicon" src="https://runzheimer.visualstudio.com/favicon.ico"/>&nbsp;&nbsp;VSTS
             </a>
+            <a type="button" href="http://tfs.recsnet.com:8080/tfs/" class="list-group-item">
+                <img class="favicon" src="http://tfs.recsnet.com:8080/tfs/favicon.ico"/>&nbsp;&nbsp;TFS 2013
+            </a>
         </div>
         <div class="list-group">
             <a type="button" href="https://runzheimer.onelogin.com/client/apps" class="list-group-item">
