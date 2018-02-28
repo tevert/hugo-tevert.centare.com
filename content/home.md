@@ -24,6 +24,24 @@ title = "Home"
         <h3>Current Projects: </h3>
         <div class="panel">
             <div class="panel-heading">
+                <h3>Trader</h3><hr/>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-2 btn-group-vertical" role="group">
+                    <a class="btn btn-default" href="https://github.com/tevert/Trader" target="_blank">
+                        <img src="/img/GitHub-Mark-64px.png" alt="" style="width: 16px;"/> Repo
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <p>A cryptocurrency trader bot - see the Github's README for details on the algorithm, and the Github issues for the upcoming roadmap. The main logic is written as a .NET console app. I may add a web UI to it in the future, but only so I can obssess over the data. Right now I'm keeping the meat of it in an EXE running on a protected VM, to make security more straightforward.</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-rounded" src="/img/trader.png" alt="Trader"/>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
                 <h3>Mood</h3><hr/>
             </div>
             <div class="panel-body">
